@@ -106,7 +106,7 @@
 			  
 			  <button type="submit" class="btn btn-primary">Confirm</button>
 			</form>
-			<
+	
 		</div>
 
     <!-- Optional JavaScript -->
