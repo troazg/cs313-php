@@ -1,0 +1,45 @@
+
+
+.item4sale {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 7px 0px 7px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 10px;
+}
+
+body {
+	padding-top: 20px;
+}
+
+
+.row-height {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+.col-height {
+  display: table-cell;
+  float: none;
+  height: 100%;
+}
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
+.top {
+	padding-top: 20px;
+}
+
+#shippingDetails {
+	padding-left: 15px;
+}
