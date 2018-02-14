@@ -93,7 +93,7 @@ include('login.php');
 			<label for="loginPassword">Password</label>
 			<input type="password" class="form-control" name="loginPassword" id="loginPassword" value="<?php echo addslashes($_POST['loginPassword']) ?>"/>
 		</div>
-		<input type="submit" class="btn btn-primary" name="submit" value="Log In">	
+		<input type="submit" class="btn btn-primary" name="submit" value="Log In" id="loginSubmit">	
 	</form>
 	
 </div>

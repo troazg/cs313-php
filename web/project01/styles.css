@@ -41,3 +41,11 @@ h2 {
 	margin-top: 30px;
 
 }
+
+.headerRow {
+	padding-bottom: 15px;
+}
+
+td {
+	text-align: left;
+}
