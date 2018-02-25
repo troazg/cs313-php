@@ -9,6 +9,6 @@ if (!empty($dbUrl)) {
 	$dbName = ltrim($dbopts["path"],'/');
 	$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 } else {
-	$db = new PDO('pgsql:host=localhost;dbname=cs313db', 'bnelson');
+	$db = new PDO('pgsql:host=localhost;dbname=cs313db', 'bnelson', 'password');
 }
 // ?>

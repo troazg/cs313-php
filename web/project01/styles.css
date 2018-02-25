@@ -49,3 +49,7 @@ h2 {
 td {
 	text-align: left;
 }
+
+.newGameFormElements, .newPublisherFormElements {
+	display: none;
+}
