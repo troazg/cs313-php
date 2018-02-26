@@ -258,7 +258,7 @@ include_once('connection.php');
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	      	<p>Are you sure you want to remove "' . $row['game_name'] . '"" from your collection?</p>
+	      	<p>Are you sure you want to remove "' . $row['game_name'] . '" from your collection?</p>
 	        
 	      </div>
 	      <div class="modal-footer">
