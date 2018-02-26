@@ -48,3 +48,13 @@ function publisherSelect() {
 		$('.newPublisherFormElements').hide();
 	}
 }
+
+function openAddPlayForm() {
+	$('.addPlayForm').show();
+	$('#addNewPlayButton').hide();
+}
+
+function openAddNoteForm() {
+	$('.addNoteForm').show();
+	$('#addNewNoteButton').hide();
+}

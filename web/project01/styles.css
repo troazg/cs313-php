@@ -53,3 +53,11 @@ td {
 .newGameFormElements, .newPublisherFormElements {
 	display: none;
 }
+
+.hidden {
+	display: none;
+}
+
+.addPlayForm, .addNoteForm {
+	display: none;
+}

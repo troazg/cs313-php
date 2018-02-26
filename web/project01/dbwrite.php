@@ -59,6 +59,28 @@ if ($_POST['formID'] == "newGameForm") {
 
 }
 
+if ($_POST['formID'] == "addPlay") {
+	$stmt = $db->prepare('INSERT INTO play (play_game, play_players, play_winner, play_score, play_owner) VALUES (:game, :players, :winner, :score, :owner)');
+	$stmt->bindValue(':game', $_POST['addPlayGameID'], PDO::PARAM_INT);
+	$stmt->bindValue(':players', $_POST['addPlayPlayers'], PDO::PARAM_STR);
+	$stmt->bindValue(':winner', $_POST['addPlayWinner'], PDO::PARAM_STR);
+	$stmt->bindValue(':score', $_POST['addPlayScore'], PDO::PARAM_INT);
+	$stmt->bindValue(':owner', $_SESSION['id'], PDO::PARAM_INT);
+	$stmt->execute();
+
+	header('Location: mainpage.php');
+
+}
+
+if ($_POST['formID'] == "addNote") {
+	$stmt = $db->prepare('INSERT INTO note (note_game, note_text, note_owner) VALUES (:game, :noteText, :owner)');
+	$stmt->bindValue(':game', $_POST['addNoteGameID'], PDO::PARAM_INT);
+	$stmt->bindValue(':noteText', $_POST['addNoteText'], PDO::PARAM_STR);
+	$stmt->bindValue(':owner', $_SESSION['id'], PDO::PARAM_INT);
+	$stmt->execute();
+
+	header('Location: mainpage.php');
+}
 
 
 
